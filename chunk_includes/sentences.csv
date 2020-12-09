@@ -1,0 +1,5 @@
+﻿Id,Sentence1,Sentence2,Subj,Clause,Modal1,Modal2,Verb
+1,I wonder if she must hand in the paper by tomorrow.,I wonder if she has to hand in the paper by tomorrow.,sg,if,must,have.to,hand
+2,I wonder if they must hand in the paper by tomorrow.,I wonder if they have to hand in the paper by tomorrow.,pl,if,must,have.to,hand
+3,That she must hand in the paper by tomorrow is clear.,That she has to hand in the paper by tomorrow is clear.,sg,that,must,have.to,hand
+4,That they must hand in the paper by tomorrow is clear.,That they have to hand in the paper by tomorrow is clear.,pl,that,must,have.to,hand
