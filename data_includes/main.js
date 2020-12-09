@@ -40,7 +40,7 @@ Template("sentences.csv", row =>
             .print()
             .wait()
         ,
-        newTimer(750).start().wait()
+        newTimer(500).start().wait()
     )
         // logs additional variables in sentence file (e.g., Fun)
         //.log("Id", row.Id)
