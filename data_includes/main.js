@@ -34,8 +34,8 @@ Template("sentences.csv", row =>
     newTrial("training",
 
         newScale("slider",   100)
-            .before(newText("left", row.Sentence1))
-            .after(newText("right", row.Sentence2))
+            .before(newText("left", row.Sentence1 + "  "))
+            .after(newText("right", row.Sentence2 + "  "))
             .settings.slider()
             .print()
             .wait()
