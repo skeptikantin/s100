@@ -38,13 +38,14 @@ Template("sentences.csv", row =>
             .after(newText("right", row.Sentence2))
             .settings.slider()
             .print()
+            .wait()
         ,
-        newTimer(500).start().wait()
+        newTimer(750).start().wait()
     )
         // logs additional variables in sentence file (e.g., Fun)
-        .log("Id", row.Id)
-        .log("left", row.Sentence1)
-        .log("right", row.Sentence2)
+        //.log("Id", row.Id)
+        //.log("left", row.Sentence1)
+        //.log("right", row.Sentence2)
 
 ) // defines template for the main experiment
 
