@@ -3,7 +3,7 @@
 // https://www.pcibex.net/documentation/
 
 PennController.ResetPrefix(null) // Shorten command names (keep this line here)
-PennController.DebugOff();
+//PennController.DebugOff();
 
 
 // Show the 'intro' trial first, then the training items in random order
@@ -45,7 +45,6 @@ Template("sentences.csv", row =>
         .log("Id", row.Id)
         .log("left", row.Sentence1)
         .log("right", row.Sentence2)
-    ,
 
 ) // defines template for the main experiment
 
