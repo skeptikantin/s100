@@ -34,8 +34,8 @@ Template("sentences.csv", row =>
     newTrial("training",
 
         newScale("slider",   100)
-            .before(newText("left", row.Sentence1 + "  "))
-            .after(newText("right", row.Sentence2 + "  "))
+            .before(newText("left", row.Sentence1))
+            .after(newText("right", row.Sentence2))
             .settings.slider()
             .print()
             .wait()
@@ -44,9 +44,11 @@ Template("sentences.csv", row =>
         newTimer(500).start().wait()
     )
         // logs additional variables in sentence file (e.g., Fun)
-        //.log("Id", row.Id)
-        //.log("left", row.Sentence1)
-        //.log("right", row.Sentence2)
+        .log("Id", row.Id)
+        .log("left", row.Sentence1)
+        .log("right", row.Sentence2)
+        .log("leftModal", row.Left)
+        .log("rightModal", row.Right)
 
 ) // defines template for the main experiment
 
