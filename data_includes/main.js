@@ -39,6 +39,7 @@ Template("sentences.csv", row =>
             .settings.slider()
             .print()
             .wait()
+            .log()
         ,
         newTimer(500).start().wait()
     )
