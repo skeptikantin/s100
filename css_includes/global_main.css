@@ -59,12 +59,11 @@ span.retry:visited {
 
 input[type = 'range'] {
     -webkit-appearance: none;
-    width: 200%; /* width of slider */
-    height: 15px;
+    width: 200px; /* width of slider */
+    height: 10px;
     border-radius: 10px;
-    background: lightgrey;
-    outline: grey;
-    opacity: 0.7;
+    background: forestgreen;
+    opacity: 1;
     -webkit-transition: .2s;
     transition: opacity .2s;
 }
@@ -87,6 +86,6 @@ input[type = 'range']::-moz-range-thumb {
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background: #4CAF50;
+    background: forestgreen;
     cursor: pointer;
 }
