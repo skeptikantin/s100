@@ -57,11 +57,11 @@ span.retry:visited {
     width: 80%;
 }
 
-.slider {
+input[type = 'range'] {
     -webkit-appearance: none;
     width: 200%; /* width of slider */
     height: 15px;
-    border-radius: 5px;
+    border-radius: 30px;
     background: green;
     outline: grey;
     opacity: 0.7;
