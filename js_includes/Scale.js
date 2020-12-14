@@ -111,10 +111,8 @@ jqueryWidget: {
 
         this.html = this.options.html;
         this.decimalPlaces = (this.options.decimalPlaces == null ? 2 : this.options.decimalPlaces);
-        // this.startColor = this.options.startColor ? parseColor(this.options.startColor) : parseColor("#5947FD");
-        // this.endColor = this.options.endColor ? parseColor(this.options.endColor) : parseColor("#59BAFD");
-        this.startColor = this.options.startColor ? parseColor(this.options.startColor) : parseColor("#D3D3D3");
-        this.endColor = this.options.endColor ? parseColor(this.options.endColor) : parseColor("#D3D3D3");
+        this.startColor = this.options.startColor ? parseColor(this.options.startColor) : parseColor("#5947FD");
+        this.endColor = this.options.endColor ? parseColor(this.options.endColor) : parseColor("#59BAFD");
 
         this.startValue = this.options.startValue;
         assert(typeof(this.startValue) == "number", "'startValue' option must be a number");
