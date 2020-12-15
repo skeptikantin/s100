@@ -1,0 +1,13 @@
+newCanvas("shapes", 200, 300)
+    .settings.add(   0, 200, newText("left", "A sentence that is relatively long and complex and incomprehensible.") )
+    .settings.add( 300, 200, newText("right", "A sentence that is relatively long") )
+    .print()
+,
+newScale("slider",   100)
+            .settings.slider()
+            .size(500)
+            .css("max-width", "unset")
+            .print()
+            .wait()
+            .log()
+

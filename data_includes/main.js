@@ -37,7 +37,7 @@ Template("sentences.csv", row =>
             .before(newText("left", row.Sentence1))
             .after(newText("right", row.Sentence2))
             .settings.slider()
-            .size(1000)
+            .size(500)
             .css("max-width", "unset")
             .print()
             .wait()
