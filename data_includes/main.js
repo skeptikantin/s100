@@ -33,9 +33,14 @@ Header(
 Template("sentences.csv", row =>
     newTrial("training",
 
+        newCanvas("shapes", 200, 300)
+            .settings.add(   0, 200, newText("left", row.Sentence1) )
+            .settings.add( 300, 200, newText("right", row.Sentence2) )
+            .print()
+        ,
         newScale("slider",   100)
-            .before(newText("left", row.Sentence1))
-            .after(newText("right", row.Sentence2))
+            //.before(newText("left", row.Sentence1))
+            //.after(newText("right", row.Sentence2))
             .settings.slider()
             .size(500)
             .css("max-width", "unset")
