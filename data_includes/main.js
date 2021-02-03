@@ -67,7 +67,7 @@ Template("stims.csv", row =>
         getScale("slider")
             .wait()
             .log()
-        
+        ,
         newTimer(500).start().wait()
     )
         // logs additional variables from stims file
