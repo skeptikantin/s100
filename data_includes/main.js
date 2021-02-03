@@ -34,6 +34,59 @@ Template("stims.csv", row =>
     newTrial("training",
 
         newText("Item", row.CARRIER)
+            .css("font-family", "Verdana")
+            .center()
+            .print("center at 50vw", "middle at 20vh")
+            .log()
+        ,
+        
+        newText("Alt1", row.SENTENCE1)
+            .print("center at 25vw", "middle at 30vh")
+            .center()
+            .log()    
+        ,
+        
+        newText("Alt2", row.SENTENCE2)
+            .print("center at 75vw", "middle at 30vh")
+            .center()
+            .log()    
+        ,
+        
+        newSelector("choice")
+            .add(getText("Alt1"), getText("Alt2"))
+            .shuffle()
+            .wait()
+            .log()    
+        ,
+        
+        newScale("slider",   100)
+            //.before(newText("left", row.Sentence1))
+            //.after(newText("right", row.Sentence2))
+            .settings.slider()
+            .size(500)
+            .css("max-width", "unset")
+            .print()
+            .wait()
+            .log()
+        ,
+        newTimer(500).start().wait()
+    )
+        // logs additional variables from stims file
+        .log("ID", row.ID)
+        .log("S1", row.SENTENCE1)
+        .log("S2", row.SENTENCE2)
+        .log("CXN", row.CXN)
+        .log("TARGET", row.TARGET)
+        .log("ALT1", row.ALT1)
+        .log("ALT2", row.ALT2)
+        .log("VERB", row.VERB)
+
+) // defines template for the main experiment
+
+Template("stims.csv", row =>
+    newTrial("main_old",
+
+        newText("Item", row.CARRIER)
             .css("font-size", "1.5em")
             .css("font-family", "Verdana")
             .center()
