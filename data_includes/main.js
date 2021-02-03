@@ -34,8 +34,11 @@ Template("stims.csv", row =>
     newTrial("training",
 
         newScale("slider", 100)
-            .size("500px", "1em")
+            // .size("500px", "1em")
+            // .settings.slider()
+            .size(500)
             .settings.slider()
+            .css("max-width", "unset")
             .print("center at 50vw", "middle at 35vh")
         ,
         
