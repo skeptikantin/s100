@@ -52,6 +52,17 @@ Template("stims.csv", row =>
             .log()    
         ,
         
+        newScale("slider",   100)
+            //.before(newText("left", row.Sentence1))
+            //.after(newText("right", row.Sentence2))
+            /*.settings.slider()
+            .size(500)
+            .css("max-width", "unset")*/
+            .print("center at 50vw", "middle at 35vh")
+            .wait()
+            .log()
+        ,
+
         newSelector("choice")
             .add(getText("Alt1"), getText("Alt2"))
             .shuffle()
@@ -59,16 +70,6 @@ Template("stims.csv", row =>
             .log()    
         ,
         
-        newScale("slider",   100)
-            //.before(newText("left", row.Sentence1))
-            //.after(newText("right", row.Sentence2))
-            .settings.slider()
-            .size(500)
-            .css("max-width", "unset")
-            .print()
-            .wait()
-            .log()
-        ,
         newTimer(500).start().wait()
     )
         // logs additional variables from stims file
