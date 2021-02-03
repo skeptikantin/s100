@@ -33,10 +33,16 @@ Header(
 Template("stims.csv", row =>
     newTrial("training",
 
+        newScale("slider", 100)
+            .size("500px", "1em")
+            .settings.slider()
+            .print("center at 50vw", "middle at 35vh")
+        ,
+        
         newText("Item", row.CARRIER)
             .css("font-family", "Verdana")
-            .center()
             .print("center at 50vw", "middle at 20vh")
+            .center()
             .log()
         ,
         
@@ -52,23 +58,15 @@ Template("stims.csv", row =>
             .log()    
         ,
         
-        newScale("slider",   100)
-            //.before(newText("left", row.Sentence1))
-            //.after(newText("right", row.Sentence2))
-            .settings.slider()
-            .size(500)
-            .css("max-width", "unset")
-            .print("center at 50vw", "middle at 35vh")
-            .wait()
-            .log()
-        ,
-
         newSelector("choice")
             .add(getText("Alt1"), getText("Alt2"))
             .shuffle()
-            .wait()
             .log()    
         ,
+        
+        getScale("slider")
+            .wait()
+            .log()
         
         newTimer(500).start().wait()
     )
