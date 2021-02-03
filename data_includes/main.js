@@ -55,9 +55,9 @@ Template("stims.csv", row =>
         newScale("slider",   100)
             //.before(newText("left", row.Sentence1))
             //.after(newText("right", row.Sentence2))
-            /*.settings.slider()
+            .settings.slider()
             .size(500)
-            .css("max-width", "unset")*/
+            .css("max-width", "unset")
             .print("center at 50vw", "middle at 35vh")
             .wait()
             .log()
