@@ -30,12 +30,20 @@ Header(
 .log("ParticipantID", PennController.GetURLParameter("participant") );
 // This log command adds a column reporting the participant's name to every line saved to the results
 
-Template("sentences.csv", row =>
+Template("stims.csv", row =>
     newTrial("training",
 
+        newText("Item", row.CARRIER)
+            .css("font-size", "1.5em")
+            .css("font-family", "Verdana")
+            .center()
+            .print()
+            .log()
+        ,
+    
         newCanvas("shapes", 200, 300)
-            .settings.add(   0, 200, newText("left", row.Sentence1) )
-            .settings.add( 300, 200, newText("right", row.Sentence2) )
+            .settings.add(   0, 200, newText("left", row.SENTENCE1) )
+            .settings.add( 300, 200, newText("right", row.SENTENCE2) )
             .print()
         ,
         newScale("slider",   100)
@@ -50,12 +58,15 @@ Template("sentences.csv", row =>
         ,
         newTimer(500).start().wait()
     )
-        // logs additional variables in sentence file (e.g., Fun)
-        .log("Id", row.Id)
-        .log("left", row.Sentence1)
-        .log("right", row.Sentence2)
-        .log("leftModal", row.Left)
-        .log("rightModal", row.Right)
+        // logs additional variables from stims file
+        .log("ID", row.ID)
+        .log("S1", row.SENTENCE1)
+        .log("S2", row.SENTENCE2)
+        .log("CXN", row.CXN)
+        .log("TARGET", row.TARGET)
+        .log("ALT1", row.ALT1)
+        .log("ALT2", row.ALT2)
+        .log("VERB", row.VERB)
 
 ) // defines template for the main experiment
 
