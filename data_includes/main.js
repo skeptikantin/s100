@@ -10,7 +10,7 @@ PennController.ResetPrefix(null) // Shorten command names (keep this line here)
 // Then comes the intermission
 // The actual experiment presents the sentences randomly, with a break after N sentences.
 // After that, send the results and finally show the trial labeled 'bye'.
-Sequence("main_new", SendResults())
+Sequence("training", SendResults())
 
 
 // What is in Header happens at the beginning of every single trial
@@ -44,7 +44,6 @@ Template("stims.csv", row =>
         ,
         
         newText("Item", row.CARRIER)
-            .css("font-family", "Verdana")
             .print("center at 50vw", "middle at 20vh")
             .center()
             .log()
@@ -85,47 +84,6 @@ Template("stims.csv", row =>
         .log("VERB", row.VERB)
 
 ) // defines template for the main experiment
-
-Template("stims.csv", row =>
-    newTrial("main_new",
-    
-       newScale("slider", 100)
-            .size("500px", "1em")
-            // .settings.slider()
-            //.size(500)
-            .settings.slider()
-            .css("max-width", "unset")
-            .print("center at 50vw", "middle at 35vh")
-            .log()
-        ,
-        
-        newText("Item", row.CARRIER)
-            .css("font-family", "Verdana")
-            .print("center at 50vw", "middle at 20vh")
-            .center()
-            .log()
-        ,
-        
-        newText("Alt1", row.SENTENCE1)
-            .print("center at 25vw", "middle at 30vh")
-            .center()
-            .log()    
-        ,
-        
-        newText("Alt2", row.SENTENCE2)
-            .print("center at 75vw", "middle at 30vh")
-            .center()
-            .log()    
-        ,
-        
-        newCanvas("Sliderbox", "100vw", "80vh")
-            .add(getText("Alt1"), getText("Alt2"))
-            .shuffle()
-            .log()
-        
-    )
-
-)
 
 Template("stims.csv", row =>
     newTrial("main_old",
