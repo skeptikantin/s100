@@ -82,6 +82,7 @@ Template("stims.csv", row =>
         .log("ALT1", row.ALT1)
         .log("ALT2", row.ALT2)
         .log("VERB", row.VERB)
+        .log("SELECT", "slider")
 
 ) // defines template for the main experiment
 
