@@ -34,9 +34,9 @@ Template("stims.csv", row =>
     newTrial("training",
 
         newScale("slider", 100)
-            // .size("500px", "1em")
+            .size("500px", "1em")
             // .settings.slider()
-            .size(500)
+            //.size(500)
             .settings.slider()
             .css("max-width", "unset")
             .print("center at 50vw", "middle at 35vh")
@@ -82,7 +82,6 @@ Template("stims.csv", row =>
         .log("ALT1", row.ALT1)
         .log("ALT2", row.ALT2)
         .log("VERB", row.VERB)
-        .log("SELECT", "slider")
 
 ) // defines template for the main experiment
 
