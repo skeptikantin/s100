@@ -40,6 +40,7 @@ Template("stims.csv", row =>
             .settings.slider()
             .css("max-width", "unset")
             .print("center at 50vw", "middle at 35vh")
+            .log()
         ,
         
         newText("Item", row.CARRIER)
