@@ -32,44 +32,28 @@ Header(
 
 Template("stims.csv", row =>
     newTrial("training",
-
-        newScale("slider", 100)
-            .size("500px", "1em")
-            // .settings.slider()
-            //.size(500)
-            .settings.slider()
-            .css("max-width", "unset")
-            .print("center at 50vw", "middle at 35vh")
-            .log()
+        newCanvas("container", "500px","5em")
+            .print("center at 50vw","middle at 50vh")
         ,
-        
         newText("Item", row.CARRIER)
-            .print("center at 50vw", "middle at 20vh")
-            .center()
+            .print("center at 50%", "top at 0%", getCanvas("container"))
             .log()
         ,
-        
-        newText("Alt1", row.SENTENCE1)
-            .print("center at 25vw", "middle at 30vh")
-            .center()
-            .log()    
+        defaultText.css("white-space","nowrap")
         ,
-        
-        newText("Alt2", row.SENTENCE2)
-            .print("center at 75vw", "middle at 30vh")
-            .center()
-            .log()    
+        alts=[row.SENTENCE1,row.SENTENCE2].sort(()=>Math.random()-Math.random())
         ,
-        
-        newSelector("choice")
-            .add(getText("Alt1"), getText("Alt2"))
-            .shuffle()
-            .log()    
+        newText("Alt1", alts[0]).print("center at 0%", "top at 2em", getCanvas("container"))
         ,
-        
-        getScale("slider")
+        newText("Alt2", alts[1]).print("center at 100%", "top at 2em", getCanvas("container"))
+        ,
+        newScale("slider", 100)
+            .slider()
+            .size("500px", "1em")
+            .css("max-width", "unset")
+            .print(0, "bottom at 100%", getCanvas("container"))
+            .log()
             .wait()
-            .log()
         ,
         newTimer(500).start().wait()
     )
@@ -82,6 +66,8 @@ Template("stims.csv", row =>
         .log("ALT1", row.ALT1)
         .log("ALT2", row.ALT2)
         .log("VERB", row.VERB)
+        .log("Alt1", alts[0])
+        .log("Alt2", alts[1])
 
 ) // defines template for the main experiment
 
