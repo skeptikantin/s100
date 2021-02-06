@@ -114,6 +114,13 @@ Template("training.csv", row =>
         newCanvas("container", "500px","10em")
             .print("center at 50vw","middle at 40vh")
         ,
+        newText("<p><strong>Click on the button and drag it in either direction<br/>" +
+            "to indicate the strength of your preference.<br/>"+
+            "You can move the slider back and forth <u>until you release it</u>;<br/>"+
+            "once released, the next sentence will appear.</strong></p>")
+            .css("font-size", "0.9em")
+            .print()
+        ,
         newText("Item", row.CARRIER)
             .print("center at 50%", "top at 0%", getCanvas("container"))
             .log()
@@ -134,14 +141,7 @@ Template("training.csv", row =>
             .log()
             .wait()
         ,
-        newText("<p><strong>Click on the button and drag it in either direction<br/>" +
-            "to indicate the strength of your preference.<br/>"+
-            "You can move the slider back and forth <u>until you release it</u>;<br/>"+
-            "once released, the next sentence will appear.</strong></p>")
-            .css("font-size", "0.9em")
-            .print()
-        ,
-        newTimer(500).start().wait()
+         newTimer(500).start().wait()
     )
         // logs additional variables from stims file
         .log("ID", row.ID)
