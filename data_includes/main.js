@@ -72,8 +72,8 @@ newTrial("instructions" ,
         "For example, <em>the editor's opinion</em> and <em>the opinion of the editor</em> are both possible.<br/>"+
         "However, native speakers usually have preferences, even if both options are “correct”,<br/>" +
         "which is often quite difficult to know even for advanced learners of English.</p>" +
-        "<p>Our team studies the circumstances under which learners come close(r) to native-speaker choices,<br/>"+
-        "so we are interested in <strong>your preferences</strong> as a native-speaker of English.</p>")
+        "<p>Our team studies the circumstances under which learners come close(r) to native-speaker<br/>"+
+        "choices, so we are interested in <strong>your preferences as a native-speaker of English</strong>.</p>")
         .print()
     ,
     newText("<p><strong>Your task</strong></p>")
@@ -82,11 +82,20 @@ newTrial("instructions" ,
     newText("<p>You will see sentences with alternative expressions that can be difficult<br/>"+
         "for learners. Your task is to judge which of two alternatives is more acceptable<br/>"+
         "by dragging a slider towards the better-sounding option.</p>"+
-        "<p>For some sentences, one option clearly sounds \"off\", so you should move<br/>"+
-        "the slider (almost) all the way towards the good alternative.<br/>" +
+        "<p>You can indicate the strength of your preference by how far to the left or right<br/>"+
+        "you drag the slider.<br/>")
+        .print()
+    ,
+    newImage("s100", "s100.png")
+        .size(200,)
+        .center()
+        .print()
+    ,
+    newText("For some sentences, one option clearly sounds \"off\", so you should move<br/>"+
+        "the slider (almost) all the way towards the better alternative.<br/>" +
         "For other sentences, both options might be quite acceptable and you may feel <br/>" +
-        "you do not want to move the slider too much towards a slightly better option.</p>" +
-        "<p><strong>IMPORTANT</strong>: We are interested in <strong>your initial gut-feeling</strong>,<br/>"+
+        "you only want to move the slider a bit towards a (slightly) better option.</p>" +
+        "<p><strong>Important</strong>: We are interested in <strong>your initial gut-feeling</strong>,<br/>"+
         "so you should decide <strong>quickly</strong>, although we do ask<br/>"+
         "you to always read both alternatives carefully before you make a choice.</p>")
         .css("font-size", "1em")
@@ -156,11 +165,12 @@ Template("training.csv", row =>
 // INTERMISSION
 newTrial("intermission",
 
-    newText("<p>OK, you should be good to go.<br/>" +
-        "Remember: use your gut-feeling, and try to be quick, but do pay attention.</p>" +
+    newText("<p><strong>OK, you should be good to go for judging the 80 sentences.</strong></p>" +
+        "<p>Remember: use your gut-feeling! Try to be quick, but do pay attention.</p>" +
         "<p>The differences between some choices will be <em>very</em> minor, so<br/>" +
-        "use the slider range to reflect that – the more 'equal' two options, the more in the center.</p>" +
-        "<p>The task is simple, but a bit repetitive, so there are designated breaks every 16 sentences.<br/></p>")
+        "please feel free to indicate that by moving the slider only slightly.</p>" +
+        "<p>The task is simple, but perhaps a bit monotonous (apologies!), so there<br/>"+
+        "are designated breaks every 16 sentences to use at your own discretion.<br/></p>")
         .css("font-family", "Verdana")
         .print()
     ,
