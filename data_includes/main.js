@@ -38,10 +38,6 @@ newTrial("intro",
         .css("font-family", "Verdana")
         .print()
     ,
-    newText("<p>You have been selected for this study because you indicated that you are a<br/>" +
-        "native-speaker of English. Your participation will help us study how people learn English.</p>")
-        .print()
-    ,
     newText("<p><strong>Informed Consent</strong>:</p>")
         .css("font-family", "Verdana")
         .print()
@@ -72,19 +68,19 @@ newTrial("instructions" ,
         .css("font-family", "Verdana")
         .print()
     ,
-    newText("<p>In English, you can often choose between two expressions that mean the same thing.<br/>" +
-        "For example, <em>The editor's opinion</em> and <em>The opinion of the editor</em> are equally possible.<br/>"+
-        "However, native speakers often have preferences for either option, even if both are \"correct\",<br/>" +
+    newText("<p>In English, speakers can often choose between two expressions that mean the same.<br/>" +
+        "For example, <em>the editor's opinion</em> and <em>the opinion of the editor</em> are both possible.<br/>"+
+        "However, native speakers usually have preferences, even if both options are “correct”,<br/>" +
         "which is often quite difficult to know even for advanced learners of English.</p>" +
         "<p>Our team studies the circumstances under which learners come close(r) to native-speaker choices,<br/>"+
-        "so we are interested in <strong>your preferences</strong> as native-speakers of English.</p>")
+        "so we are interested in <strong>your preferences</strong> as a native-speaker of English.</p>")
         .print()
     ,
     newText("<p><strong>Your task</strong></p>")
         .print()
     ,
-    newText("<p>You will see sentences with alternative expressions that can be difficult for learners.</p>"+
-        "<p>Your task is to judge which of two alternatives is more acceptable<br/>"+
+    newText("<p>You will see sentences with alternative expressions that can be difficult<br/>"+
+        "for learners. Your task is to judge which of two alternatives is more acceptable<br/>"+
         "by dragging a slider towards the better-sounding option.</p>"+
         "<p>For some sentences, one option clearly sounds \"off\", so you should move<br/>"+
         "the slider (almost) all the way towards the good alternative.<br/>" +
