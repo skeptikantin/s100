@@ -73,26 +73,31 @@ newTrial("instructions" ,
         .print()
     ,
     newText("<p>In English, you can often choose between two expressions that mean the same thing.<br/>" +
-        "For example, <em>The editor's opinion</em> and <em>The opinion of the editor</em><br/>"+
-        "are equally possible. However, native speakers often have clear preferences of what sounds better<br/>" +
-        "and it is often difficult for even advanced learners of English to know which to choose.</p>" +
-        "<p>We study the circumstances under which learners come close(r) to native-speaker choices,<br/>"+
-        "so we are interested in <strong>your preferences</strong> as native-speakers of English.</p>"+
-        "<p>In this study, you will see a number of sentences with two choices that are often difficult for learners.</p>"+
-        "<p>Your task is to give an indication about the acceptability of either option by<br/>"+
-        "dragging a slider towards the better-sounding alternative.</p>")
+        "For example, <em>The editor's opinion</em> and <em>The opinion of the editor</em> are equally possible.<br/>"+
+        "However, native speakers often have preferences for either option, even if both are \"correct\",<br/>" +
+        "which is often quite difficult to know even for advanced learners of English.</p>" +
+        "<p>Our team studies the circumstances under which learners come close(r) to native-speaker choices,<br/>"+
+        "so we are interested in <strong>your preferences</strong> as native-speakers of English.</p>")
         .print()
     ,
-    newText("<p>For some sentences, one option clearly sounds \"off\", in which case you should move the slider further<br/>" +
-        "than for those where both alternatives are quite possible. You can vary how far you move the slider depending on how<br/>" +
-        "much you think one alternative sounds better.</p>" +
-        "<p><strong>IMPORTANT</strong>: We are interested in <strong>your gut-feeling</strong>, so you should decide <strong>quickly</strong>,<br/>"+
-        "although we do ask you to always read both alternatives carefully before you make a choice.</p>")
+    newText("<p><strong>Your task</strong></p>")
+        .print()
+    ,
+    newText("<p>You will see sentences with alternative expressions that can be difficult for learners.</p>"+
+        "<p>Your task is to judge which of two alternatives is more acceptable<br/>"+
+        "by dragging a slider towards the better-sounding option.</p>"+
+        "<p>For some sentences, one option clearly sounds \"off\", so you should move<br/>"+
+        "the slider (almost) all the way towards the good alternative.<br/>" +
+        "For other sentences, both options might be quite acceptable and you may feel <br/>" +
+        "you do not want to move the slider too much towards a slightly better option.</p>" +
+        "<p><strong>IMPORTANT</strong>: We are interested in <strong>your initial gut-feeling</strong>,<br/>"+
+        "so you should decide <strong>quickly</strong>, although we do ask<br/>"+
+        "you to always read both alternatives carefully before you make a choice.</p>")
         .css("font-size", "1em")
         .css("font-family", "Verdana")
         .print()
     ,
-    newText("<p>Press space to proceed to a training phase to test the slider behavior.")
+    newText("<p>Press SPACE to proceed to a training phase to test the slider behavior.")
         .css("font-family", "Verdana")
         .print()
     ,
@@ -105,12 +110,13 @@ newTrial("instructions" ,
 // TRAINING
 Template("training.csv", row =>
     newTrial("training",
-        newText("<p>You can move the slider as often as you want in either direction<br/>" +
-            "<strong>until you release it</strong>; once released, the next sentence will appear.</p>")
+        newText("<p><strong>Click on the button and drag it in either direction to indicate your preference.<br/>"+
+            "You can move the slider as much as you want <u>until you release it</u><br/>"+
+            "once released, the next sentence will appear.</strong></p>")
             .print()
         ,
         newCanvas("container", "500px","10em")
-            .print("center at 50vw","middle at 40vh")
+            .print("center at 50vw","middle at 35vh")
         ,
         newText("Item", row.CARRIER)
             .print("center at 50%", "top at 0%", getCanvas("container"))
@@ -155,8 +161,8 @@ newTrial("intermission",
 
     newText("<p>OK, you should be good to go.<br/>" +
         "Remember: use your gut-feeling, and try to be quick, but do pay attention.</p>" +
-        "<p>The differences between some choices will be <em>very</em> minor<br>, so" +
-        "use the slider range to reflect that – the more in the center, the more 'equal' the two.</p>" +
+        "<p>The differences between some choices will be <em>very</em> minor, so<br/>" +
+        "use the slider range to reflect that – the more 'equal' two options, the more in the center.</p>" +
         "<p>The task is simple, but a bit repetitive, so there are designated breaks every 16 sentences.<br/></p>")
         .css("font-family", "Verdana")
         .print()
@@ -174,7 +180,7 @@ newTrial("intermission",
 Template("stims.csv", row =>
     newTrial("experiment",
         newCanvas("container", "500px","10em")
-            .print("center at 50vw","middle at 40vh")
+            .print("center at 50vw","middle at 35vh")
         ,
         newText("Item", row.CARRIER)
             .print("center at 50%", "top at 0%", getCanvas("container"))
