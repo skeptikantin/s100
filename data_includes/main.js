@@ -72,18 +72,15 @@ newTrial("instructions" ,
         .css("font-family", "Verdana")
         .print()
     ,
-    newText("<p>One of the key challenges even for advanced learners of English is the choice between two<br/>" +
-        "expressions that mean the same. For example, <em>The editor's opinion</em> and <em>The opinion of the editor</em><br/>"+
-        "are equally possible, but native speakers tend to have clear preferences. We study the circumstances under<br/>"+
-        "which learners come close(r) to native-speaker choices, and we are interested in <strong>your preferences</strong>.</p>"+
-        "<p>You will see a number of sentences with two choices that are typically difficult for learners.</p>"+
+    newText("<p>In English, you can often choose between two expressions that mean the same thing.<br/>" +
+        "For example, <em>The editor's opinion</em> and <em>The opinion of the editor</em><br/>"+
+        "are equally possible. However, native speakers often have clear preferences of what sounds better<br/>" +
+        "and it is often difficult for even advanced learners of English to know which to choose.</p>" +
+        "<p>We study the circumstances under which learners come close(r) to native-speaker choices,<br/>"+
+        "so we are interested in <strong>your preferences</strong> as native-speakers of English.</p>"+
+        "<p>In this study, you will see a number of sentences with two choices that are often difficult for learners.</p>"+
         "<p>Your task is to give an indication about the acceptability of either option by<br/>"+
         "dragging a slider towards the better-sounding alternative.</p>")
-        .print()
-    ,
-    newImage("maze", "lmaze.png")
-        .size(200,)
-        .center()
         .print()
     ,
     newText("<p>For some sentences, one option clearly sounds \"off\", in which case you should move the slider further<br/>" +
