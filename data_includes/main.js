@@ -10,7 +10,7 @@ PennController.ResetPrefix(null) // Shorten command names (keep this line here)
 // Then comes the intermission
 // The actual experiment presents the sentences randomly, with a break after N sentences.
 // After that, send the results and finally show the trial labeled 'bye'.
-Sequence("intro", "instructions", "training", sepWithN( "break" , randomize("experiment") , 6), "debrief", SendResults(), "goodbye")
+Sequence("intro", "instructions", "training", "intermission", sepWithN( "break" , randomize("experiment") , 6), "debrief", SendResults(), "goodbye")
 
 
 // What is in Header happens at the beginning of every single trial
@@ -154,13 +154,13 @@ Template("training.csv", row =>
 ) // defines template for the main experiment
 
 // INTERMISSION
-newTrial("intermission" ,
+newTrial("intermission",
 
     newText("<p>OK, you should be good to go.<br/>" +
-        "Remember: try to be quick, but pay attention.</p>" +
-        "<p>Some decisions will be tougher than others.</p>" +
-        "<p>The task is simple, but a bit tiring, so there are designated<br/>" +
-        "breaks every 16 sentences.<br/></p>")
+        "Remember: use your gut-feeling, and try to be quick, but do pay attention.</p>" +
+        "<p>The differences between some choices will be <em>very</em> minor<br>, so" +
+        "use the slider range to reflect that – the more in the center, the more 'equal' the two.</p>" +
+        "<p>The task is simple, but a bit repetitive, so there are designated breaks every 16 sentences.<br/></p>")
         .css("font-family", "Verdana")
         .print()
     ,
