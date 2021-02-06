@@ -112,7 +112,7 @@ Template("training.csv", row =>
     newTrial("training",
 
         newCanvas("container", "500px","10em")
-            .print("center at 50vw","middle at 40vh")
+            .print("center at 50vw","middle at 35vh")
         ,
         newText("<p><strong>Click on the button and drag it in either direction<br/>" +
             "to indicate the strength of your preference.<br/>"+
