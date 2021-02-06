@@ -32,8 +32,8 @@ Header(
 
 Template("stims.csv", row =>
     newTrial("training",
-        newCanvas("container", "500px","5em")
-            .print("center at 20vw","middle at 50vh")
+        newCanvas("container", "500px","10em")
+            .print("center at 50vw","middle at 20vh")
         ,
         newText("Item", row.CARRIER)
             .print("center at 50%", "top at 0%", getCanvas("container"))
@@ -43,9 +43,9 @@ Template("stims.csv", row =>
         ,
         alts=[row.SENTENCE1,row.SENTENCE2].sort(()=>Math.random()-Math.random())
         ,
-        newText("Alt1", alts[0]).print("center at 0%", "top at 2em", getCanvas("container"))
+        newText("Alt1", alts[0]).print("center at 0%", "top at 5em", getCanvas("container"))
         ,
-        newText("Alt2", alts[1]).print("center at 100%", "top at 2em", getCanvas("container"))
+        newText("Alt2", alts[1]).print("center at 100%", "top at 5em", getCanvas("container"))
         ,
         newScale("slider", 100)
             .slider()
