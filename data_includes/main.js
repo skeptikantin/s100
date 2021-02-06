@@ -68,41 +68,36 @@ newTrial("instructions" ,
         .css("font-family", "Verdana")
         .print()
     ,
-    newText("<p>In English, speakers can often choose between two expressions that mean the same.<br/>" +
+    newText("<p>In English, speakers can often choose between two expressions that mean (roughly) the same.<br/>" +
         "For example, <em>the editor's opinion</em> and <em>the opinion of the editor</em> are both possible.<br/>"+
-        "However, native speakers usually have preferences, even if both options are “correct”,<br/>" +
-        "which is often quite difficult to know even for advanced learners of English.</p>" +
+        "However, native speakers usually have (strong) preferences, even if both options are “correct”.<br/>" +
+        "These preferences are often quite difficult to know even for advanced learners of English.</p>" +
         "<p>Our team studies the circumstances under which learners come close(r) to native-speaker<br/>"+
-        "choices, so we are interested in <strong>your preferences as a native-speaker of English</strong>.</p>")
+        "choices, so we are interested in <strong>your intuitions as a native-speaker</strong>.</p>")
         .print()
     ,
     newText("<p><strong>Your task</strong></p>")
         .print()
     ,
-    newText("<p>You will see sentences with alternative expressions that can be difficult<br/>"+
-        "for learners. Your task is to judge which of two alternatives is more acceptable<br/>"+
-        "by dragging a slider towards the better-sounding option.</p>"+
-        "<p>You can indicate the strength of your preference by how far to the left or right<br/>"+
-        "you drag the slider.<br/>")
+    newText("<p>You will see sentences with two options that are difficult for learners. Your task is to<br/>"+
+        "judge which choice is more acceptable by dragging a slider towards the better-sounding option.</p>")
         .print()
     ,
     newImage("s100", "s100.png")
-        .size(200,)
+        .size(400,)
         .center()
         .print()
     ,
-    newText("For some sentences, one option clearly sounds \"off\", so you should move<br/>"+
-        "the slider (almost) all the way towards the better alternative.<br/>" +
-        "For other sentences, both options might be quite acceptable and you may feel <br/>" +
-        "you only want to move the slider a bit towards a (slightly) better option.</p>" +
-        "<p><strong>Important</strong>: We are interested in <strong>your initial gut-feeling</strong>,<br/>"+
-        "so you should decide <strong>quickly</strong>, although we do ask<br/>"+
-        "you to always read both alternatives carefully before you make a choice.</p>")
+    newText("<p>Please indicate the <strong>strength of your preference</strong> by how far<br/>"+
+        "you drag the slider: for some sentences, one option clearly sounds \"off\", while for<br/>" +
+        "others you may only want to move the slider very little towards a (slightly) better option.</p>" +
+        "<p><strong>Important</strong>: We are interested in <strong>your initial gut-feeling</strong>, so you<br/>"+
+        "should decide <strong>quickly</strong>, but please do read both alternatives carefully.</p>")
         .css("font-size", "1em")
         .css("font-family", "Verdana")
         .print()
     ,
-    newText("<p>Press SPACE to proceed to a training phase to test the slider behavior.")
+    newText("<p>Press SPACE to test the slider with two sentences.")
         .css("font-family", "Verdana")
         .print()
     ,
