@@ -68,18 +68,16 @@ newTrial("instructions" ,
         .css("font-family", "Verdana")
         .print()
     ,
-    newText("<p>In English, speakers can often choose between two expressions that mean (roughly) the same.<br/>" +
-        "For example, <em>the editor's opinion</em> and <em>the opinion of the editor</em> are both possible.<br/>"+
-        "but if your first language is English, you will have (strong) preferences, even if both are “correct”.<br/>" +
-        "These preferences are often quite difficult to know even for advanced learners of English.</p>" +
-        "<p>Our team studies the circumstances under which learners of English come close(r) to the choices of native<br/>"+
-        "English speakers, so we are interested in <strong>your intuitions</strong> on sentences with two alternatives.</p>")
+    newText("<p>Our team studies the circumstances under which learners of English come close(r) to choices of speakers<br/>"+
+        "whose first (or only) language is English, so we are interested in <strong>your intuitions</strong>.</p>" +
+        "<p>In English, speakers can often choose between two expressions that mean (roughly) the same.<br/>" +
+        "but if your first language is English, you will have (strong) preferences, even if both are “correct”.</p>.")
         .print()
     ,
     newText("<p><strong>Your task</strong></p>")
         .print()
     ,
-    newText("<p>You will see sentences with two options that are difficult for learners. Your task is to<br/>"+
+    newText("<p>You will see sentences with two choices that are difficult for learners. Your task is to<br/>"+
         "judge which choice is more acceptable by dragging a slider towards the better-sounding option.</p>")
         .print()
     ,
@@ -111,15 +109,15 @@ newTrial("instructions" ,
 Template("training.csv", row =>
     newTrial("training",
 
-        newCanvas("container", "500px","10em")
+        newCanvas("container", "500px", "10em")
             .print("center at 50vw","middle at 35vh")
         ,
         newText("<p><strong>Click on the button and drag it in either direction<br/>" +
             "to indicate the strength of your preference.<br/>"+
             "You can move the slider back and forth <u>until you release it</u>;<br/>"+
             "once released, the next sentence will appear.</strong></p>")
-            .css("font-size", "0.9em")
-            .print()
+            .css("font-size", "0.8em")
+            .print("center at 50%", "top at 100%")
         ,
         newText("Item", row.CARRIER)
             .print("center at 50%", "top at 0%", getCanvas("container"))
