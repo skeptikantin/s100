@@ -68,8 +68,8 @@ newTrial("instructions" ,
         .css("font-family", "Verdana")
         .print()
     ,
-    newText("<p>Our team studies the circumstances under which learners of English come close(r) to choices of speakers<br/>"+
-        "whose first (or only) language is English, so we are interested in <strong>your intuitions</strong>.</p>" +
+    newText("<p>Our team studies the circumstances under which learners of English come close(r) to choices made by speakers<br/>"+
+        "whose first (or only) language is English, so we are interested in <strong>your intuitions</strong> (it's not a grammar test).</p>" +
         "<p>In English, speakers can often choose between two expressions that mean (roughly) the same.<br/>" +
         "but if your first language is English, you will have (strong) preferences, even if both are “correct”.</p>.")
         .print()
