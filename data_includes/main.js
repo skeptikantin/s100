@@ -128,9 +128,9 @@ Template("training.csv", row =>
         ,
         alts=[row.SENTENCE1,row.SENTENCE2].sort(()=>Math.random()-Math.random())
         ,
-        newText("Alt1", alts[0]).print("center at 0%", "top at 4em", getCanvas("container"))
+        newText("Alt1", alts[0]).print("center at 0%", "top at 5em", getCanvas("container"))
         ,
-        newText("Alt2", alts[1]).print("center at 100%", "top at 4em", getCanvas("container"))
+        newText("Alt2", alts[1]).print("center at 100%", "top at 5em", getCanvas("container"))
         ,
         newScale("slider", 100)
             .slider()
