@@ -106,8 +106,9 @@ newTrial("instructions" ,
 // TRAINING
 Template("training.csv", row =>
     newTrial("training",
-        newText("<p><strong>Click on the button and drag it in either direction to indicate your preference.<br/>"+
-            "You can move the slider as much as you want <u>until you release it</u><br/>"+
+        newText("<p><strong>Click on the button and drag it in either direction<br/>" +
+            "to indicate the strength of your preference.<br/>"+
+            "You can move the slider as much as you want <u>until you release it</u>;<br/>"+
             "once released, the next sentence will appear.</strong></p>")
             .print()
         ,
