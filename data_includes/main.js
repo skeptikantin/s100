@@ -3,7 +3,7 @@
 // https://www.pcibex.net/documentation/
 
 PennController.ResetPrefix(null) // Shorten command names (keep this line here)
-//PennController.DebugOff();
+PennController.DebugOff();
 
 
 // Show the 'intro' trial first, then the training items in random order
@@ -70,10 +70,10 @@ newTrial("instructions" ,
     ,
     newText("<p>In English, speakers can often choose between two expressions that mean (roughly) the same.<br/>" +
         "For example, <em>the editor's opinion</em> and <em>the opinion of the editor</em> are both possible.<br/>"+
-        "However, native speakers usually have (strong) preferences, even if both options are “correct”.<br/>" +
+        "but if your first language is English, you will have (strong) preferences, even if both are “correct”.<br/>" +
         "These preferences are often quite difficult to know even for advanced learners of English.</p>" +
-        "<p>Our team studies the circumstances under which learners come close(r) to native-speaker<br/>"+
-        "choices, so we are interested in <strong>your intuitions as a native-speaker</strong>.</p>")
+        "<p>Our team studies the circumstances under which learners of English come close(r) to the choices of native<br/>"+
+        "English speakers, so we are interested in <strong>your intuitions</strong> on sentences with two alternatives.</p>")
         .print()
     ,
     newText("<p><strong>Your task</strong></p>")
@@ -89,8 +89,8 @@ newTrial("instructions" ,
         .print()
     ,
     newText("<p>Please indicate the <strong>strength of your preference</strong> by how far you drag the slider:<br/>"+
-        "for some sentences, one option clearly sounds \"off\", while for others you may want to move<br/>" +
-        "the slider only very little towards a (slightly) better option.</p>" +
+        "for some sentences, one option clearly sounds “off”, while for others you may want to move<br/>" +
+        "the slider only a little towards a (slightly) better option.</p>" +
         "<p><strong>Important</strong>: We are interested in <strong>your initial gut-feeling</strong>, so you<br/>"+
         "should decide <strong>quickly</strong>, but please do read both alternatives carefully.</p>")
         .css("font-size", "1em")
@@ -110,13 +110,7 @@ newTrial("instructions" ,
 // TRAINING
 Template("training.csv", row =>
     newTrial("training",
-        newText("<p><strong>Click on the button and drag it in either direction<br/>" +
-            "to indicate the strength of your preference.<br/>"+
-            "You can move the slider back and forth <u>until you release it</u>;<br/>"+
-            "once released, the next sentence will appear.</strong></p>")
-            .css("font-size", "0.9em")
-            .print()
-        ,
+
         newCanvas("container", "500px","10em")
             .print("center at 50vw","middle at 40vh")
         ,
@@ -139,6 +133,13 @@ Template("training.csv", row =>
             .print(0, "bottom at 100%", getCanvas("container"))
             .log()
             .wait()
+        ,
+        newText("<p><strong>Click on the button and drag it in either direction<br/>" +
+            "to indicate the strength of your preference.<br/>"+
+            "You can move the slider back and forth <u>until you release it</u>;<br/>"+
+            "once released, the next sentence will appear.</strong></p>")
+            .css("font-size", "0.9em")
+            .print()
         ,
         newTimer(500).start().wait()
     )
