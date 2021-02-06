@@ -1,9 +1,3 @@
 ﻿CARRIER,SENTENCE1,SENTENCE2,ID,CXN,TARGET,ALT1,ALT2,VERB,PERSON,SOURCE,AGENTIVITY,GENERICITY,LIST,PREF,ASSOC,COLL.STR,CHECK,LENGTH
 "If you don't buy groceries in the morning,",you must do it<br/>in the evening.,you have to do it<br/>in the evening.,49,modal,target,must,have.to,do,2,circ,ag,gen,1,,,,,15
 "If you want to reduce violence,",you must change<br/>people's living conditions.,you have to change<br/>people's living conditions.,50,modal,target,must,have.to,change,2,circ,ag,gen,1,,,,,12
-"Since the grass will grow quickly,",you must cut<br/>it regularly.,you have to cut<br/>it regularly.,51,modal,target,must,have.to,cut,2,circ,ag,gen,1,,,,,11
-"To build long-lasting success,",you must train<br/>your staff well.,you have to train<br/>your staff well.,52,modal,target,must,have.to,train,2,circ,ag,gen,1,,,,,10
-"If you don't buy groceries in the morning,",you must do it<br/>in the evening.,you have to do it<br/>in the evening.,49,modal,target,must,have.to,do,2,circ,ag,gen,1,,,,,15
-"If you want to reduce violence,",you must change<br/>people's living conditions.,you have to change<br/>people's living conditions.,50,modal,target,must,have.to,change,2,circ,ag,gen,1,,,,,12
-"Since the grass will grow quickly,",you must cut<br/>it regularly.,you have to cut<br/>it regularly.,51,modal,target,must,have.to,cut,2,circ,ag,gen,1,,,,,11
-"To build long-lasting success,",you must train<br/>your staff well.,you have to train<br/>your staff well.,52,modal,target,must,have.to,train,2,circ,ag,gen,1,,,,,10

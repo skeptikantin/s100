@@ -190,6 +190,19 @@ Template("stims.csv", row =>
         .log("Alt1", alts[0])
         .log("Alt2", alts[1])
         .log("CHECK", row.CHECK)
+    ,
+    newTrial("break",
+
+        newText("<p>Well done, you've earned a little rest if you want.</p>" +
+            "Press SPACE to continue.")
+            .css("font-family", "Verdana")
+            .center()
+            .log()
+            .print()
+        ,
+        newKey(" ")
+            .wait()
+    )
 
 ) // defines template for the main experiment
 
