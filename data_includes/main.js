@@ -88,9 +88,9 @@ newTrial("instructions" ,
         .center()
         .print()
     ,
-    newText("<p>Please indicate the <strong>strength of your preference</strong> by how far<br/>"+
-        "you drag the slider: for some sentences, one option clearly sounds \"off\", while for<br/>" +
-        "others you may only want to move the slider very little towards a (slightly) better option.</p>" +
+    newText("<p>Please indicate the <strong>strength of your preference</strong> by how far you drag the slider:<br/>"+
+        "for some sentences, one option clearly sounds \"off\", while for others you may want to move<br/" +
+        "the slider only very little towards a (slightly) better option.</p>" +
         "<p><strong>Important</strong>: We are interested in <strong>your initial gut-feeling</strong>, so you<br/>"+
         "should decide <strong>quickly</strong>, but please do read both alternatives carefully.</p>")
         .css("font-size", "1em")
@@ -114,10 +114,11 @@ Template("training.csv", row =>
             "to indicate the strength of your preference.<br/>"+
             "You can move the slider as much as you want <u>until you release it</u>;<br/>"+
             "once released, the next sentence will appear.</strong></p>")
+            .css("font-size", "0.9em")
             .print()
         ,
         newCanvas("container", "500px","10em")
-            .print("center at 50vw","middle at 35vh")
+            .print("center at 50vw","middle at 50vh")
         ,
         newText("Item", row.CARRIER)
             .print("center at 50%", "top at 0%", getCanvas("container"))
@@ -127,9 +128,9 @@ Template("training.csv", row =>
         ,
         alts=[row.SENTENCE1,row.SENTENCE2].sort(()=>Math.random()-Math.random())
         ,
-        newText("Alt1", alts[0]).print("center at 0%", "top at 5em", getCanvas("container"))
+        newText("Alt1", alts[0]).print("center at 0%", "top at 4em", getCanvas("container"))
         ,
-        newText("Alt2", alts[1]).print("center at 100%", "top at 5em", getCanvas("container"))
+        newText("Alt2", alts[1]).print("center at 100%", "top at 4em", getCanvas("container"))
         ,
         newScale("slider", 100)
             .slider()
@@ -162,8 +163,8 @@ newTrial("intermission",
 
     newText("<p><strong>OK, you should be good to go for judging the 80 sentences.</strong></p>" +
         "<p>Remember: use your gut-feeling! Try to be quick, but do pay attention.</p>" +
-        "<p>The differences between some choices will be <em>very</em> minor, so<br/>" +
-        "please feel free to indicate that by moving the slider only slightly.</p>" +
+        "<p>The differences between some choices will be <em>very</em> minor,<br/>" +
+        "this is intentional — you may express that by not moving the slider too much.</p>" +
         "<p>The task is simple, but perhaps a bit monotonous (apologies!), so there<br/>"+
         "are designated breaks every 16 sentences to use at your own discretion.<br/></p>")
         .css("font-family", "Verdana")
