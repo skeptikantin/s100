@@ -73,7 +73,7 @@ newTrial("instructions" ,
         .print()
     ,
     newText("<p>One of the key challenges even for advanced learners of English is the choice between two<br/>" +
-        "expressions that mean the same. For example, <em>The editor's opinion</em> and <em>The opinion of the editor</em>"+
+        "expressions that mean the same. For example, <em>The editor's opinion</em> and <em>The opinion of the editor</em><br/>"+
         "are equally possible, but native speakers tend to have clear preferences. We study the circumstances under<br/>"+
         "which learners come close(r) to native-speaker choices, and we are interested in <strong>your preferences</strong>.</p>"+
         "<p>You will see a number of sentences with two choices that are typically difficult for learners.</p>"+
@@ -108,6 +108,10 @@ newTrial("instructions" ,
 // TRAINING
 Template("training.csv", row =>
     newTrial("training",
+        newText("<p>You can move the slider as often as you want in either direction<br/>" +
+            "<strong>until you release it</strong>; once released, the next sentence will appear.</p>")
+            .print()
+        ,
         newCanvas("container", "500px","10em")
             .print("center at 50vw","middle at 40vh")
         ,
@@ -149,6 +153,26 @@ Template("training.csv", row =>
 
 ) // defines template for the main experiment
 
+// INTERMISSION
+newTrial("intermission" ,
+
+    newText("<p>OK, you should be good to go.<br/>" +
+        "Remember: try to be quick, but pay attention.</p>" +
+        "<p>Some decisions will be tougher than others.</p>" +
+        "<p>The task is simple, but a bit tiring, so there are designated<br/>" +
+        "breaks every 16 sentences.<br/></p>")
+        .css("font-family", "Verdana")
+        .print()
+    ,
+    newText("<p>Press SPACE to proceed to main experiment.")
+        .css("font-family", "Verdana")
+        .print()
+    ,
+    newKey(" ")
+        .log()
+        .once()
+        .wait()
+) // instructions
 
 Template("stims.csv", row =>
     newTrial("experiment",
