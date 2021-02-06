@@ -285,14 +285,6 @@ newTrial("goodbye",
         .css("font-family", "Verdana")
         .print()
     ,
-    newText("<p><strong>Our feedback</strong>: The task you just did tries to measure how we process sentences<br/>"+
-        "of varying (presumed) complexity. Trivially, more complex sentences take longer to read, but complexity<br/>"+
-        "comes in various forms and can be located in different parts of a sentence. Maze experiments<br/>"+
-        "help us learn more about how people understand and process language (well at least a tiny bit!).</p>")
-        .css("font-size", "1em")
-        .css("font-family", "Verdana")
-        .print()
-    ,
     newText("<strong><a href='https://app.prolific.co/submissions/complete?cc=8B2C141F'>Click here to return to Prolific to validate your participation.</a></strong>")
         .css("font-size", "1em")
         .css("font-family", "Verdana")
