@@ -89,7 +89,7 @@ newTrial("instructions" ,
         .print()
     ,
     newText("<p>Please indicate the <strong>strength of your preference</strong> by how far you drag the slider:<br/>"+
-        "for some sentences, one option clearly sounds \"off\", while for others you may want to move<br/" +
+        "for some sentences, one option clearly sounds \"off\", while for others you may want to move<br/>" +
         "the slider only very little towards a (slightly) better option.</p>" +
         "<p><strong>Important</strong>: We are interested in <strong>your initial gut-feeling</strong>, so you<br/>"+
         "should decide <strong>quickly</strong>, but please do read both alternatives carefully.</p>")
@@ -112,13 +112,13 @@ Template("training.csv", row =>
     newTrial("training",
         newText("<p><strong>Click on the button and drag it in either direction<br/>" +
             "to indicate the strength of your preference.<br/>"+
-            "You can move the slider as much as you want <u>until you release it</u>;<br/>"+
+            "You can move the slider back and forth <u>until you release it</u>;<br/>"+
             "once released, the next sentence will appear.</strong></p>")
             .css("font-size", "0.9em")
             .print()
         ,
         newCanvas("container", "500px","10em")
-            .print("center at 50vw","middle at 50vh")
+            .print("center at 50vw","middle at 40vh")
         ,
         newText("Item", row.CARRIER)
             .print("center at 50%", "top at 0%", getCanvas("container"))
@@ -163,8 +163,7 @@ newTrial("intermission",
 
     newText("<p><strong>OK, you should be good to go for judging the 80 sentences.</strong></p>" +
         "<p>Remember: use your gut-feeling! Try to be quick, but do pay attention.</p>" +
-        "<p>The differences between some choices will be <em>very</em> minor,<br/>" +
-        "this is intentional — you may express that by not moving the slider too much.</p>" +
+        "<p>The differences between some options will be <em>very</em> minor, which is intentional.</p>" +
         "<p>The task is simple, but perhaps a bit monotonous (apologies!), so there<br/>"+
         "are designated breaks every 16 sentences to use at your own discretion.<br/></p>")
         .css("font-family", "Verdana")
