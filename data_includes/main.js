@@ -33,7 +33,7 @@ Header(
 Template("stims.csv", row =>
     newTrial("training",
         newCanvas("container", "500px","5em")
-            .print("center at 50vw","middle at 50vh")
+            .print("center at 20vw","middle at 50vh")
         ,
         newText("Item", row.CARRIER)
             .print("center at 50%", "top at 0%", getCanvas("container"))
