@@ -59,6 +59,7 @@ Template("stims.csv", row =>
     )
         // logs additional variables from stims file
         .log("ID", row.ID)
+        .log("LIST", row.LIST)
         .log("S1", row.SENTENCE1)
         .log("S2", row.SENTENCE2)
         .log("CXN", row.CXN)
