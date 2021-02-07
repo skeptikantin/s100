@@ -127,16 +127,16 @@ Template("training.csv", row =>
             .sort(()=>Math.random()-Math.random())
         ,
         newText("Alt1", alts[0])
-            .print("center at 0%", "top at 50%", getCanvas("container"))
+            .print("center at 0%", "top at 20%", getCanvas("container"))
         ,
         newText("Alt2", alts[1])
-            .print("center at 100%", "top at 50%", getCanvas("container"))
+            .print("center at 100%", "top at 20%", getCanvas("container"))
         ,
         newScale("slider", 100)
             .slider()
             .size("500px", "1em")
             .css("max-width", "unset")
-            .print(0, "bottom at 70%", getCanvas("container"))
+            .print(0, "bottom at 50%", getCanvas("container"))
             .log()
             .wait()
         ,
