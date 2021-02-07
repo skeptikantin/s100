@@ -117,7 +117,7 @@ Template("training.csv", row =>
             "You can move the slider back and forth <u>until you release it</u>;<br/>"+
             "once released, the next sentence will appear.</strong></p>")
             .css("font-size", "0.8em")
-            .print("center at 50%", "top at 10em")
+            .print("center at 50%", "bottom at 10em")
         ,
         newText("Item", row.CARRIER)
             .print("center at 50%", "top at 0%", getCanvas("container"))
@@ -221,8 +221,7 @@ Template("stims.csv", row =>
     ,
     newTrial("break",
 
-        newText("<p>Well done, you've earned a little rest if you want.</p>" +
-            "Press SPACE to continue.")
+        newText("<p>Designated break. Press SPACE to continue.</p>")
             .css("font-family", "Verdana")
             .center()
             .log()
@@ -246,17 +245,17 @@ newTrial("debrief",
         .css("font-family", "Verdana")
         .print()
     ,
-    newText("<p>Please indicate your handedness:</p>")
+    newText("<p>Did you read the sentences out loud?</p>")
         .css("font-family", "Verdana")
         .print()
     ,
-    newScale("handedness", "right-handed", "left-handed", "no dominant hand", "rather not say")
+    newScale("read", "yes", "no", "sometimes", "can’t remember", "prefer not to say")
         .css("font-family", "Verdana")
         .settings.vertical()
         .print()
         .log()
     ,
-    newText("<p>In a few words: Any thoughts on the experiment itself? Difficult? Fun?</p>")
+    newText("<p>Any thoughts on the experiment itself you’d like to share? Difficult? Fun?</p>")
         .css("font-family", "Verdana")
         .print()
     ,
