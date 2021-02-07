@@ -88,7 +88,7 @@ newTrial("instructions" ,
     ,
     newText("<p>You can indicate the <strong>strength of your preference</strong> by how far you move the slider:<br/>"+
         "for some sentences, one option clearly sounds “off”, while for others you may want<br/>" +
-        "to move the slider only a little towards a (slightly) better option.</p>" +
+        "to move the slider only a little bit towards a (slightly) better option.</p>" +
         "<p><strong>Important</strong>: We are interested in <strong>your gut-feeling</strong>, so you should decide<br/>"+
         "<strong>quickly</strong>, but we do ask you to read both alternatives carefully.</p>")
         .css("font-size", "1em")
@@ -112,12 +112,10 @@ Template("training.csv", row =>
         newCanvas("container", "500px", "10em")
             .print("center at 50vw","middle at 35vh")
         ,
-        newText("<p><strong>Click on the button and drag it in either direction<br/>" +
-            "to indicate the strength of your preference.<br/>"+
-            "You can move the slider back and forth <u>until you release it</u>;<br/>"+
-            "once released, the next sentence will appear.</strong></p>")
+        newText("<p><strong>Click and drag the button in either direction to indicate strength of preference.<br/>" +
+            "You can move the slider <u>until you release it</u>; once released, the next sentence will appear.</strong></p>")
             .css("font-size", "0.8em")
-            .print("center at 50%", "bottom at 10em")
+            .print("center at 50%", "bottom at 100%", getCanvas("container"))
         ,
         newText("Item", row.CARRIER)
             .print("center at 50%", "top at 0%", getCanvas("container"))
@@ -125,17 +123,20 @@ Template("training.csv", row =>
         ,
         defaultText.css("white-space","nowrap")
         ,
-        alts=[row.SENTENCE1,row.SENTENCE2].sort(()=>Math.random()-Math.random())
+        alts=[row.SENTENCE1,row.SENTENCE2]
+            .sort(()=>Math.random()-Math.random())
         ,
-        newText("Alt1", alts[0]).print("center at 0%", "top at 5em", getCanvas("container"))
+        newText("Alt1", alts[0])
+            .print("center at 0%", "top at 5em", getCanvas("container"))
         ,
-        newText("Alt2", alts[1]).print("center at 100%", "top at 5em", getCanvas("container"))
+        newText("Alt2", alts[1])
+            .print("center at 100%", "top at 5em", getCanvas("container"))
         ,
         newScale("slider", 100)
             .slider()
             .size("500px", "1em")
             .css("max-width", "unset")
-            .print(0, "bottom at 100%", getCanvas("container"))
+            .print(0, "bottom at 80%", getCanvas("container"))
             .log()
             .wait()
         ,
