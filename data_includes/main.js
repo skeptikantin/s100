@@ -68,17 +68,17 @@ newTrial("instructions" ,
         .css("font-family", "Verdana")
         .print()
     ,
-    newText("<p>Our team studies the circumstances under which learners of English come close(r) to choices made by speakers<br/>"+
-        "whose first (or only) language is English, so we are interested in <strong>your intuitions</strong> (it's not a grammar test).</p>" +
-        "<p>In English, speakers can often choose between two expressions that mean (roughly) the same.<br/>" +
-        "but if your first language is English, you will have (strong) preferences, even if both are “correct”.</p>.")
+    newText("<p>In English, speakers can often choose between two expressions that mean (roughly)<br/>" +
+        "the same, but if your first language is English, you will usually have preferences.</p>" +
+        "<p>Our team studies the circumstances under which learners of English come close(r) to<br/>"+
+        "preferences by native English speakers, so we are interested in <strong>your intuitions</strong>.</p>")
         .print()
     ,
     newText("<p><strong>Your task</strong></p>")
         .print()
     ,
-    newText("<p>You will see sentences with two choices that are difficult for learners. Your task is to<br/>"+
-        "judge which choice is more acceptable by dragging a slider towards the better-sounding option.</p>")
+    newText("<p>You will see sentences with choices that are difficult for learners. Your task is to<br/>"+
+        "judge which is more acceptable by dragging a slider towards the better-sounding option.</p>")
         .print()
     ,
     newImage("s100", "s100.png")
@@ -86,11 +86,11 @@ newTrial("instructions" ,
         .center()
         .print()
     ,
-    newText("<p>Please indicate the <strong>strength of your preference</strong> by how far you drag the slider:<br/>"+
-        "for some sentences, one option clearly sounds “off”, while for others you may want to move<br/>" +
-        "the slider only a little towards a (slightly) better option.</p>" +
-        "<p><strong>Important</strong>: We are interested in <strong>your initial gut-feeling</strong>, so you<br/>"+
-        "should decide <strong>quickly</strong>, but please do read both alternatives carefully.</p>")
+    newText("<p>You can indicate the <strong>strength of your preference</strong> by how far you move the slider:<br/>"+
+        "for some sentences, one option clearly sounds “off”, while for others you may want<br/>" +
+        "to move the slider only a little towards a (slightly) better option.</p>" +
+        "<p><strong>Important</strong>: We are interested in <strong>your gut-feeling</strong>, so you should decide<br/>"+
+        "<strong>quickly</strong>, but we do ask you to read both alternatives carefully.</p>")
         .css("font-size", "1em")
         .css("font-family", "Verdana")
         .print()
@@ -117,7 +117,7 @@ Template("training.csv", row =>
             "You can move the slider back and forth <u>until you release it</u>;<br/>"+
             "once released, the next sentence will appear.</strong></p>")
             .css("font-size", "0.8em")
-            .print("center at 50%", "top at 100%")
+            .print("center at 50%", "top at 10em")
         ,
         newText("Item", row.CARRIER)
             .print("center at 50%", "top at 0%", getCanvas("container"))
