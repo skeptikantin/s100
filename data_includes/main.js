@@ -109,12 +109,12 @@ newTrial("instructions" ,
 Template("training.csv", row =>
     newTrial("training",
 
-        newCanvas("container", "500px", "10em")
+        newCanvas("container", "500px", "15em")
             .print("center at 50vw","middle at 35vh")
         ,
-        newText("<p><strong>Click and drag the button in either direction to indicate strength of preference.<br/>" +
+        newText("<p><strong>Click and drag button in either direction to indicate strength of preference.<br/>" +
             "You can move the slider <u>until you release it</u>; once released, the next sentence will appear.</strong></p>")
-            .css("font-size", "0.8em")
+            .css("font-size", "0.7em")
             .print("center at 50%", "bottom at 100%", getCanvas("container"))
         ,
         newText("Item", row.CARRIER)
@@ -127,10 +127,10 @@ Template("training.csv", row =>
             .sort(()=>Math.random()-Math.random())
         ,
         newText("Alt1", alts[0])
-            .print("center at 0%", "top at 20%", getCanvas("container"))
+            .print("center at 0%", "top at 30%", getCanvas("container"))
         ,
         newText("Alt2", alts[1])
-            .print("center at 100%", "top at 20%", getCanvas("container"))
+            .print("center at 100%", "top at 30%", getCanvas("container"))
         ,
         newScale("slider", 100)
             .slider()
