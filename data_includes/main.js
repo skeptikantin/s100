@@ -95,7 +95,7 @@ newTrial("instructions" ,
         .css("font-family", "Verdana")
         .print()
     ,
-    newText("<p>Press SPACE to test the slider with two sentences.")
+    newText("<p>Press SPACE to proceed to two training sentences to test the slider.")
         .css("font-family", "Verdana")
         .print()
     ,
@@ -112,8 +112,9 @@ Template("training.csv", row =>
         newCanvas("container", "500px", "15em")
             .print("center at 50vw","middle at 35vh")
         ,
-        newText("<p><strong>Click and drag button in either direction to indicate strength of preference.<br/>" +
-            "You can move the slider <u>until you release it</u>; once released, the next sentence will appear.</strong></p>")
+        newText("<p><em>Click, hold & drag button along slider to indicate strength of preference.<br/>" +
+            "You can move button <u>until you release it</u>; once released, new sentence appears.<br/>"+
+            "You’ll have to move the button though, even if only very slightly.</em></p>")
             .css("font-size", "0.7em")
             .print("center at 50%", "bottom at 100%", getCanvas("container"))
         ,
@@ -222,7 +223,7 @@ Template("stims.csv", row =>
     ,
     newTrial("break",
 
-        newText("<p>Designated break. Press SPACE to continue.</p>")
+        newText("<p>Have a short break if you want to. Press SPACE to continue.</p>")
             .css("font-family", "Verdana")
             .center()
             .log()
