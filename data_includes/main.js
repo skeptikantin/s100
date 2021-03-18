@@ -286,7 +286,7 @@ SendResults("send") // send results to server before good-bye message
 
 newTrial("goodbye",
     newText("<p>That's it, thank you very much for your time and effort!</p>")
-        .css("font-size", "1.2em")
+        .css("font-size", "1em")
         .css("font-family", "Verdana")
         .print()
     ,
@@ -296,7 +296,7 @@ newTrial("goodbye",
         .print()
     ,
     newText("<p><br/>You can contact the corresponding researcher <a href='https://www.sfla.ch/' target='_blank'>here</a> (opens new tab).</p>")
-        .css("font-size", ".8em")
+        .css("font-size", ".9em")
         .css("font-family", "Verdana")
         .print()
     ,
