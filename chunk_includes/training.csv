@@ -1,5 +1,5 @@
 ﻿CARRIER,SENTENCE1,SENTENCE2,ID,CXN,TARGET,ALT1,ALT2,VERB,PERSON,SOURCE,AGENTIVITY,GENERICITY,LIST,PREF,ASSOC,COLL.STR,CHECK,LENGTH
-"Before they knew it, they were caught",in the eye of the storm.,in the storm’s eye.,,,,,,,,,,,,,,,,
-"Every Monday at six, our children",play tennis.,are playing tennis.,,,,,,,,,,,,,,,,
-"For months now,",I have been learning French.,I learn French.,,,,,,,,,,,,,,,,
-"For our mother's birthday, we will be",baking her a cake.,baking a cake for her.,,,,,,,,,,,,,,,,
+"Before they knew it, they were caught",in <b>the eye of the storm</b>.,in <b>the storm’s eye</b>.,,,,,,,,,,,,,,,,
+"Every Monday at six, our children",<b>play</b> tennis.,<b>are playing</b> tennis.,,,,,,,,,,,,,,,,
+"For months now,",I <b>have been learning</b> French.,I <b>learn</b> French.,,,,,,,,,,,,,,,,
+"For our mother's birthday, we will be",baking <b>her a cake</b>.,baking <b>a cake for her</b>.,,,,,,,,,,,,,,,,
