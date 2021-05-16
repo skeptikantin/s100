@@ -21,10 +21,11 @@ p {
 div.bar-container {
     border: 1px solid;
     border-color: #9ea4b1;
-    background-color: white;
+    background-color: red;
 }
+/* The color of the progress bar */
 div.bar {
-    background-color: black;
+    background-color: lightgrey;
 }
 p.progress-text {
     padding-top: 0.5em;
