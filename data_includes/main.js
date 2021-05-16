@@ -47,6 +47,7 @@ newTrial("intro",
         "<strong>Risks:</strong> There are no risks involved.<br/>"+
         "<strong>Equipment:</strong> I am participating from a device with a <strong>physical keyboard</strong>.<br/>"+
         "<strong>Environment:</strong> I participate from a quiet environment and can <strong>work uninterrupted</strong>.</p>")
+        .css("font-size", "1em")
         .css("font-family", "Verdana")
         .print()
     ,
@@ -72,6 +73,8 @@ newTrial("instructions" ,
         "the same, but if your first language is English, you will usually have preferences.</p>" +
         "<p>Our team studies the circumstances under which learners of English come close(r) to<br/>"+
         "preferences by native English speakers, so we are interested in <strong>your intuitions</strong>.</p>")
+        .css("font-size", "1em")
+        .css("font-family", "Verdana")
         .print()
     ,
     newText("<p><strong>Your task</strong></p>")
@@ -79,6 +82,8 @@ newTrial("instructions" ,
     ,
     newText("<p>You will see sentences with choices that are difficult for learners. Your task is to<br/>"+
         "judge which is more acceptable by dragging a slider towards the better-sounding option.</p>")
+        .css("font-size", "1em")
+        .css("font-family", "Verdana")
         .print()
     ,
     newImage("s100", "s100.png")
@@ -167,10 +172,12 @@ newTrial("intermission",
         "<p>The differences between some options will be <em>very</em> minor, which is intentional.</p>" +
         "<p>The task is simple, but perhaps a bit monotonous (apologies!), so there<br/>"+
         "are designated breaks every 16 sentences to use at your own discretion.<br/></p>")
+        .css("font-size", "1em")
         .css("font-family", "Verdana")
         .print()
     ,
     newText("<p>Press SPACE to proceed to main experiment.")
+        .css("font-size", "1.2em")
         .css("font-family", "Verdana")
         .print()
     ,
@@ -244,20 +251,24 @@ newTrial("debrief",
     ,
     newText("<p>Before you go, we'd appreciate it if you take a brief moment to provide voluntary feedback.<br/>" +
         "This information will help us with the evaluation of the results.</p>")
+        .css("font-size", "1em")
         .css("font-family", "Verdana")
         .print()
     ,
     newText("<p>Did you read the sentences out loud?</p>")
+        .css("font-size", "1em")
         .css("font-family", "Verdana")
         .print()
     ,
     newScale("read", "yes", "no", "sometimes", "can’t remember", "prefer not to say")
+        .css("font-size", "1em")
         .css("font-family", "Verdana")
         .settings.vertical()
         .print()
         .log()
     ,
     newText("<p>Any thoughts on the experiment itself you’d like to share? Difficult? Fun?</p>")
+        .css("font-size", "1em")
         .css("font-family", "Verdana")
         .print()
     ,
@@ -265,6 +276,7 @@ newTrial("debrief",
         .settings.log()
         .settings.lines(0)
         .settings.size(400, 100)
+        .css("font-size", "1em")
         .css("font-family", "Verdana")
         .print()
         .log()
@@ -290,7 +302,7 @@ newTrial("goodbye",
         .css("font-family", "Verdana")
         .print()
     ,
-    newText("<strong><a href='https://app.prolific.co/submissions/complete?cc=8B2C141F'>Click here to return to Prolific to validate your participation.</a></strong>")
+    newText("<strong><a href=''>Click here to return to Prolific to validate your participation.</a></strong>")
         .css("font-size", "1em")
         .css("font-family", "Verdana")
         .print()

@@ -18,15 +18,19 @@ p {
     font-weight: bold;
     font-size: medium;
 }
+
+/* The empty bar container (color is what is at the beginning) */
 div.bar-container {
     border: 1px solid;
     border-color: #9ea4b1;
-    background-color: red;
+    background-color: white;
 }
 /* The color of the progress bar */
 div.bar {
     background-color: lightgrey;
 }
+
+/* The text that says "progress" */
 p.progress-text {
     padding-top: 0.5em;
     margin-top: 0;
