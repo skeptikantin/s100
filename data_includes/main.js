@@ -95,7 +95,7 @@ newTrial("instructions" ,
     newText("<p>Sometimes both options are more or less equally good, so you can or should<br/>"+
         "indicate the <strong>strength of your preference</strong> by how far you move the slider.<br/>"+
         "For some sentences, one option sounds clearly “off”, while for others you may want<br/>" +
-        "to move the slider only a little bit towards a (slightly) better option.</p>" +
+        "to move the slider only a little towards a (slightly) better option.</p>" +
         "<p><strong>Important</strong>: We are interested in <strong>your gut-feeling</strong>, so you should decide<br/>"+
         "<strong>quickly</strong>, but we do ask you to read both alternatives carefully.</p>")
         .css("font-size", "1em")
