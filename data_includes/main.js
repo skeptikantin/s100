@@ -92,8 +92,8 @@ newTrial("instructions" ,
         .center()
         .print()
     ,
-    newText("<p>Sometimes both options are more or less equally good or acceptable, so<br/>"+
-        "you can indicate the <strong>strength of your preference</strong> by how far you move the slider.<br/>"+
+    newText("<p>Sometimes both options are more or less equally good, so you can or should<br/>"+
+        "indicate the <strong>strength of your preference</strong> by how far you move the slider.<br/>"+
         "For some sentences, one option sounds clearly “off”, while for others you may want<br/>" +
         "to move the slider only a little bit towards a (slightly) better option.</p>" +
         "<p><strong>Important</strong>: We are interested in <strong>your gut-feeling</strong>, so you should decide<br/>"+
@@ -123,7 +123,7 @@ Template("training.csv", row =>
         newText("<p><em>Click, hold & drag button along slider to indicate strength of preference.<br/>" +
             "You can move button <u>until you release it</u>; once released, new sentence appears.<br/>"+
             "You’ll have to move the button though, even if only very slightly.</em></p>")
-            .css("font-size", "0.7em")
+            .css("font-size", "0.8em")
             .print("center at 50%", "bottom at 100%", getCanvas("container"))
         ,
         newText("Item", row.CARRIER)
