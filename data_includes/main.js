@@ -71,7 +71,7 @@ newTrial("instructions" ,
         .print()
     ,
     newText("<p>In English, speakers can often choose between two expressions that mean (roughly)<br/>" +
-        "the same, but if your first language is English, you will usually have preferences.</p>" +
+        "the same, but if your native language is English, you will usually have preferences.</p>" +
         "<p>Our team studies the circumstances under which learners of English come close(r) to<br/>"+
         "preferences by native English speakers, so we are interested in <strong>your intuitions</strong>.</p>")
         .css("font-size", "1em")
@@ -249,13 +249,13 @@ Template("stims.csv", row =>
 
 newTrial("debrief",
 
-    newText("<p>That's (almost) it, thank you!</p>")
+    newText("<p>That’s (almost) it, thank you!</p>")
         .css("font-size", "1.2em")
         .css("font-family", "Verdana")
         .print()
     ,
-    newText("<p>Before you go, we'd appreciate if you take a brief moment to provide voluntary feedback.<br/>" +
-        "This information will help us with the evaluation of the results.</p>")
+    newText("<p>Before you go, we’d very much appreciate if you take a brief moment to provide<br/>" +
+        "voluntary feedback. This information will help us with the evaluation of the results.</p>")
         .css("font-size", "1em")
         .css("font-family", "Verdana")
         .print()
@@ -302,12 +302,12 @@ newTrial("debrief",
 SendResults("send") // send results to server before good-bye message
 
 newTrial("goodbye",
-    newText("<p>That's it, thank you very much for your time and effort!</p>")
+    newText("<p>That’s it, thank you very much for your time and effort!</p>")
         .css("font-size", "1em")
         .css("font-family", "Verdana")
         .print()
     ,
-    newText("<strong><a href=''>Click here to return to Prolific to validate your participation.</a></strong>")
+    newText("<strong><a href='https://app.prolific.co/submissions/complete?cc=24E63A55'>Click here to return to Prolific to validate your participation.</a></strong>")
         .css("font-size", "1em")
         .css("font-family", "Verdana")
         .print()
