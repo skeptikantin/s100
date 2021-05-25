@@ -1,6 +1,6 @@
-﻿CARRIER,SENTENCE1,SENTENCE2,ID,CXN,TARGET,ALT1,ALT2,VERB,PERSON,SOURCE,AGENTIVITY,GENERICITY,LIST,PREF,ASSOC,COLL.STR,CHECK,LENGTH,EXP
-"Before they knew it, they were caught",in <b>the eye of the storm</b>.,in <b>the storm’s eye</b>.,,,,,,,,,,,,,,,,,
-"Every Monday at six, our children",<b>play</b> tennis.,<b>are playing</b> tennis.,,,,,,,,,,,,,,,,,
-"For months now,",I <b>have been learning</b> French.,I <b>learn</b> French.,,,,,,,,,,,,,,,,,
-"At the end of the course,",they showed <b>everybody their paintings</b>.,they showed <b>their paintings to everybody</b>.,,,,,,,,,,,,,,,,,
-"After the concert,",they <b>started to clean</b> up immediately.,they <b>began to clean</b> up immediately.,,,,,,,,,,,,,,,,,
+﻿CARRIER,SENTENCE1,SENTENCE2,ID,CXN,TARGET,ALT1,ALT2,VERB.ADJ,PERSON,SOURCE,AGENTIVITY,GENERICITY,LIST,PREF,ASSOC,COLL.STR,CHECK,LENGTH,EXP
+"Before they knew it, they were caught",in <b>the eye of the storm</b>.,in <b>the storm’s eye</b>.,T1,train,train,of,gen,,,,,,,of,,,,,
+"Every Monday at six, our children",<b>play</b> tennis.,<b>are playing</b> tennis.,T2,train,train,simp,prog,,,,,,,simp,,,yes,,-40
+"For months now,",I <b>learn</b> French.,I <b>have been learning</b> French.,T3,train,train,simp,prog,,,,,,,prog,,,yes,,40
+"At the end of the course,",they showed <b>everybody their paintings</b>.,they showed <b>their paintings to everybody</b>.,T4,train,train,ditr,dative,,,,,,,none,,,,,
+"After the concert,",they <b>started to clean</b> up immediately.,they <b>began to clean</b> up immediately.,T5,train,train,start,begin,,,,,,,none,,,,,

@@ -160,7 +160,7 @@ Template("training.csv", row =>
         .log("TARGET", row.TARGET)
         .log("ALT1", row.ALT1)
         .log("ALT2", row.ALT2)
-        .log("VERB", row.VERB)
+        .log("VERB", row.VERB.ADJ)
         .log("Alt1", alts[0])
         .log("Alt2", alts[1])
         .log("PREF", row.PREF)
