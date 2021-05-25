@@ -4,13 +4,14 @@
 
 PennController.ResetPrefix(null) // Shorten command names (keep this line here)
 PennController.DebugOff();
+SetCounter("inc", 1); // so that the counter is reset at every participant for more equal distribution
 
 
 // Show the 'intro' trial first, then the training items in random order
 // Then comes the intermission
 // The actual experiment presents the sentences randomly, with a break after N sentences.
 // After that, send the results and finally show the trial labeled 'bye'.
-Sequence("intro", "instructions", "training", "intermission", sepWithN( "break" , randomize("experiment") , 6), "debrief", SendResults(), "goodbye")
+Sequence("intro", "instructions", "training", "intermission", sepWithN( "break" , randomize("experiment") , 16), "debrief", SendResults(), "goodbye")
 
 
 // What is in Header happens at the beginning of every single trial
@@ -102,6 +103,7 @@ newTrial("instructions" ,
     ,
     newText("<p>Press SPACE to proceed to two training sentences to test the slider.")
         .css("font-family", "Verdana")
+        .css("font-size", "1em")
         .print()
     ,
     newKey(" ")
@@ -167,17 +169,17 @@ Template("training.csv", row =>
 // INTERMISSION
 newTrial("intermission",
 
-    newText("<p><strong>OK, you should be good to go for judging the 80 sentences.</strong></p>" +
+    newText("<p><strong>OK, you should be good to go for judging the 64 sentences.</strong></p>" +
         "<p>Remember: use your gut-feeling! Try to be quick, but do pay attention.</p>" +
         "<p>The differences between some options will be <em>very</em> minor, which is intentional.</p>" +
-        "<p>The task is simple, but perhaps a bit monotonous (apologies!), so there<br/>"+
-        "are designated breaks every 16 sentences to use at your own discretion.<br/></p>")
+        "<p>The task is simple, but a bit monotonous, so there are designated breaks<br/>"+
+        "every 16 sentences to use at your own discretion.<br/></p>")
         .css("font-size", "1em")
         .css("font-family", "Verdana")
         .print()
     ,
     newText("<p>Press SPACE to proceed to main experiment.")
-        .css("font-size", "1.2em")
+        .css("font-size", "1em")
         .css("font-family", "Verdana")
         .print()
     ,
@@ -223,10 +225,11 @@ Template("stims.csv", row =>
         .log("TARGET", row.TARGET)
         .log("ALT1", row.ALT1)
         .log("ALT2", row.ALT2)
-        .log("VERB", row.VERB)
+        .log("VERB", row.VERB.ADJ)
         .log("Alt1", alts[0])
         .log("Alt2", alts[1])
         .log("CHECK", row.CHECK)
+        .log("EXP", row.EXP)
     ,
     newTrial("break",
 
