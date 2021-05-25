@@ -11,7 +11,7 @@ SetCounter("inc", 1); // so that the counter is reset at every participant for m
 // Then comes the intermission
 // The actual experiment presents the sentences randomly, with a break after N sentences.
 // After that, send the results and finally show the trial labeled 'bye'.
-Sequence("intro", "instructions", "training", "intermission", sepWithN( "break" , randomize("experiment") , 16), "debrief", SendResults(), "goodbye")
+Sequence("intro", "instructions", randomize("training"), "intermission", sepWithN( "break" , randomize("experiment") , 16), "debrief", SendResults(), "goodbye")
 
 
 // What is in Header happens at the beginning of every single trial
@@ -117,7 +117,7 @@ newTrial("instructions" ,
 Template("training.csv", row =>
     newTrial("training",
 
-        newCanvas("container", "500px", "10em")
+        newCanvas("container", "500px", "13em")
             .print("center at 50vw","middle at 35vh")
         ,
         newText("<p><em>Click, hold & drag button along slider to indicate strength of preference.<br/>" +
