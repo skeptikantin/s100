@@ -71,9 +71,9 @@ newTrial("instructions" ,
         .print()
     ,
     newText("<p>In English, speakers can often choose between two expressions that mean (roughly)<br/>" +
-        "the same, but if your native language is English, you will usually have preferences.</p>" +
+        "the same, but if your native language is English, you will usually have a preference.</p>" +
         "<p>Our team studies the circumstances under which learners of English come close(r) to<br/>"+
-        "preferences by native English speakers, so we are interested in <strong>your intuitions</strong>.</p>")
+        "preferences of native English speakers, so we are interested in <strong>your intuitions</strong>.</p>")
         .css("font-size", "1em")
         .css("font-family", "Verdana")
         .print()
@@ -163,7 +163,9 @@ Template("training.csv", row =>
         .log("VERB", row.VERB)
         .log("Alt1", alts[0])
         .log("Alt2", alts[1])
+        .log("PREF", row.PREF)
         .log("CHECK", row.CHECK)
+        .log("EXP", row.EXP)
 
 ) // defines template for the main experiment
 
@@ -230,6 +232,7 @@ Template("stims.csv", row =>
         .log("VERB", row.VERB.ADJ)
         .log("Alt1", alts[0])
         .log("Alt2", alts[1])
+        .log("PREF", row.PREF)
         .log("CHECK", row.CHECK)
         .log("EXP", row.EXP)
     ,
