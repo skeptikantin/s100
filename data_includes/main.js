@@ -92,8 +92,9 @@ newTrial("instructions" ,
         .center()
         .print()
     ,
-    newText("<p>You can indicate the <strong>strength of your preference</strong> by how far you move the slider:<br/>"+
-        "for some sentences, one option clearly sounds “off”, while for others you may want<br/>" +
+    newText("<p>Sometimes both options are more or less equally good or acceptable, so<br/>"+
+        "you can indicate the <strong>strength of your preference</strong> by how far you move the slider.<br/>"+
+        "For some sentences, one option sounds clearly “off”, while for others you may want<br/>" +
         "to move the slider only a little bit towards a (slightly) better option.</p>" +
         "<p><strong>Important</strong>: We are interested in <strong>your gut-feeling</strong>, so you should decide<br/>"+
         "<strong>quickly</strong>, but we do ask you to read both alternatives carefully.</p>")
@@ -101,7 +102,7 @@ newTrial("instructions" ,
         .css("font-family", "Verdana")
         .print()
     ,
-    newText("<p>Press SPACE to proceed to two training sentences to test the slider.")
+    newText("<p>Press SPACE to proceed to some training sentences to test the slider.")
         .css("font-family", "Verdana")
         .css("font-size", "1em")
         .print()
@@ -169,11 +170,12 @@ Template("training.csv", row =>
 // INTERMISSION
 newTrial("intermission",
 
-    newText("<p><strong>OK, you should be good to go for judging the 64 sentences.</strong></p>" +
-        "<p>Remember: use your gut-feeling! Try to be quick, but do pay attention.</p>" +
+    newText("<p><strong>OK, you should be good to go for judging the 56 sentences.</strong></p>" +
+        "<p>Remember: use your gut-feeling! Try to be quick, but do pay close attention.</p>" +
         "<p>The differences between some options will be <em>very</em> minor, which is intentional.</p>" +
-        "<p>The task is simple, but a bit monotonous, so there are designated breaks<br/>"+
-        "every 16 sentences to use at your own discretion.<br/></p>")
+        "<p>The task is simple, but a bit monotonous and repetitive, so the experiment will pause<br/>"+
+        "every 8 sentences, at which points you can take a (short) break if you want to. Please <em>do not</em><br/>"+
+        "take breaks <em>while</em> a sentence is on the screen. Thank you!<br/></p>")
         .css("font-size", "1em")
         .css("font-family", "Verdana")
         .print()
@@ -252,7 +254,7 @@ newTrial("debrief",
         .css("font-family", "Verdana")
         .print()
     ,
-    newText("<p>Before you go, we'd appreciate it if you take a brief moment to provide voluntary feedback.<br/>" +
+    newText("<p>Before you go, we'd appreciate if you take a brief moment to provide voluntary feedback.<br/>" +
         "This information will help us with the evaluation of the results.</p>")
         .css("font-size", "1em")
         .css("font-family", "Verdana")
