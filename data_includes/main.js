@@ -314,7 +314,7 @@ newTrial("goodbye",
         .css("font-family", "Verdana")
         .print()
     ,
-    newText("<strong><a href='https://app.prolific.co/submissions/complete?cc=24E63A55'>Click here to return to Prolific to validate your participation.</a></strong>")
+    newText("<strong><a href='https://app.prolific.co/submissions/complete?cc=1F5B29A7'>Click here to return to Prolific to validate your participation.</a></strong>")
         .css("font-size", "1em")
         .css("font-family", "Verdana")
         .print()
