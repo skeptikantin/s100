@@ -119,10 +119,10 @@
 118,"Over the next few decades, <br/>heatwaves will become",<b>intenser</b> in most regions.,<b>more intense</b> in most regions.,14,78,78,comparative,filler,morph,per,intense,,predicative,,,2,per,alt2.strong,733.04992,0.9768786,yes,30,12,4,5,-1
 119,"Over the next few decades, <br/>heatwaves will become",<b>intenser</b> in most regions.,<b>more intense</b> in most regions.,14,78,78,comparative,filler,morph,per,intense,,attributive,,,3,per,alt2.strong,733.04992,0.9768786,yes,30,12,4,5,-1
 120,"Over the next few decades, <br/>heatwaves will become",<b>intenser</b> in most regions.,<b>more intense</b> in most regions.,14,78,78,comparative,filler,morph,per,intense,,attributive,,,4,per,alt2.strong,733.04992,0.9768786,yes,30,12,4,5,-1
-121,Extreme weather phenomena are becoming,<b>commoner</b> in the near future.,<b>more common</b> in the near future.,15,79,79,comparative,filler,morph,per,common,,attributive,,,1,per,alt2.strong,2289.75337,0.8905547,yes,40,10,5,6,-1
-122,Extreme weather phenomena are becoming,<b>commoner</b> in the near future.,<b>more common</b> in the near future.,15,79,79,comparative,filler,morph,per,common,,predicative,,,2,per,alt2.strong,2289.75337,0.8905547,yes,40,10,5,6,-1
-123,Extreme weather phenomena are becoming,<b>commoner</b> in the near future.,<b>more common</b> in the near future.,15,79,79,comparative,filler,morph,per,common,,predicative,,,3,per,alt2.strong,2289.75337,0.8905547,yes,40,10,5,6,-1
-124,Extreme weather phenomena are becoming,<b>commoner</b> in the near future.,<b>more common</b> in the near future.,15,79,79,comparative,filler,morph,per,common,,attributive,,,4,per,alt2.strong,2289.75337,0.8905547,yes,40,10,5,6,-1
+121,Extreme weather phenomena will become,<b>commoner</b> in the near future.,<b>more common</b> in the near future.,15,79,79,comparative,filler,morph,per,common,,attributive,,,1,per,alt2.strong,2289.75337,0.8905547,yes,40,10,5,6,-1
+122,Extreme weather phenomena will become,<b>commoner</b> in the near future.,<b>more common</b> in the near future.,15,79,79,comparative,filler,morph,per,common,,predicative,,,2,per,alt2.strong,2289.75337,0.8905547,yes,40,10,5,6,-1
+123,Extreme weather phenomena will become,<b>commoner</b> in the near future.,<b>more common</b> in the near future.,15,79,79,comparative,filler,morph,per,common,,predicative,,,3,per,alt2.strong,2289.75337,0.8905547,yes,40,10,5,6,-1
+124,Extreme weather phenomena will become,<b>commoner</b> in the near future.,<b>more common</b> in the near future.,15,79,79,comparative,filler,morph,per,common,,attributive,,,4,per,alt2.strong,2289.75337,0.8905547,yes,40,10,5,6,-1
 125,The cause of this disease is,<b>likelier</b> a combination of both.,<b>more likely</b> a combination of both.,16,80,80,comparative,filler,morph,per,likely,,predicative,,,1,per,alt2.strong,18523.69884,0.9954558,yes,40,11,5,6,-1
 126,The cause of this disease is,<b>likelier</b> a combination of both.,<b>more likely</b> a combination of both.,16,80,80,comparative,filler,morph,per,likely,,attributive,,,2,per,alt2.strong,18523.69884,0.9954558,yes,40,11,5,6,-1
 127,The cause of this disease is,<b>likelier</b> a combination of both.,<b>more likely</b> a combination of both.,16,80,80,comparative,filler,morph,per,likely,,attributive,,,3,per,alt2.strong,18523.69884,0.9954558,yes,40,11,5,6,-1
@@ -214,7 +214,7 @@
 213,"If you are unhappy with a decision,",<b>send a letter of complaint to them</b>.,<b>send them a letter of complaint</b>.,121,117,,argstr,filler,dative,ditr,send,pron,trans,low,,4,none,none,0.10348,,,,14,7,6,1
 214,"If you are unhappy with a decision,",<b>send a letter of complaint to the council</b>.,<b>send the council a letter of complaint</b>.,122,118,,argstr,filler,dative,ditr,send,np,trans,low,,2,none,none,0.10348,,,,15,8,7,1
 215,"This morning on the train,",a spy <b>handed a message to her</b>.,a spy <b>handed her a message</b>.,123,119,,argstr,filler,dative,ditr,hand,pron,trans,low,,3,none,none,,,,,12,7,6,1
-216,"This morning on the train,",a spy <b>handed a message to an informant</b>.,a spy <b>handed the informant a message</b>.,124,120,,argstr,filler,dative,ditr,hand,np,trans,low,,1,none,none,,,,,13,8,7,1
+216,"This morning on the train,",a spy <b>handed a message to an informant</b>.,a spy <b>handed an informant a message</b>.,124,120,,argstr,filler,dative,ditr,hand,np,trans,low,,1,none,none,,,,,13,8,7,1
 217,The company was bad and,never <b>paid a decent wage to him</b>.,never <b>paid him a decent wage</b>.,125,121,,argstr,filler,dative,ditr,pay,pron,trans,high,,2,none,none,,,,,12,7,6,1
 218,The company was bad and,never <b>paid a decent wage to my uncle</b>.,never <b>paid my uncle a decent wage</b>.,126,122,,argstr,filler,dative,ditr,pay,np,trans,high,,3,none,none,,,,,13,8,7,1
 219,"If we have questions,",we can <b>write an email to them</b>.,we can <b>write them an email</b>.,127,123,,argstr,filler,dative,ditr,write,pron,trans,high,,4,none,none,,,,,11,7,6,1
@@ -222,7 +222,7 @@
 221,"Because he was always late,",they <b>got a watch for him</b>.,they <b>got him a watch</b>.,129,125,,argstr,filler,dative,ditr,get,pron,trans,high,,2,none,none,,,,,11,6,5,1
 222,"Because he was always late,",they <b>got a watch for their friend</b>.,they <b>got their friend a watch</b>.,130,126,,argstr,filler,dative,ditr,get,np,trans,high,,3,none,none,,,,,12,7,6,1
 223,"Every night before bed,",their parents <b>read a story to them</b>.,their parents <b>read them a story</b>.,131,127,,argstr,filler,dative,ditr,read,pron,trans,high,,4,none,none,,,,,11,7,6,1
-224,"Every night before bed,",their parents <b>read a story to the children</b>.,their parents <b>read their children a story</b>.,132,128,,argstr,filler,dative,ditr,read,np,trans,high,,1,none,none,,,,,12,8,7,1
+224,"Every night before bed,",their parents <b>read a story to their children</b>.,their parents <b>read their children a story</b>.,132,128,,argstr,filler,dative,ditr,read,np,trans,high,,1,none,none,,,,,12,8,7,1
 225,"After I saw the disaster on TV,",I <b>donated $50 to them</b>.,I <b>donated them $50</b>.,133,129,,argstr,filler,dative,ditr,donate,pron,trans,,,1,dative,dative,,,yes,-40,12,5,4,1
 226,"After I saw the disaster on TV,",I <b>donated $50 to the relief fund</b>.,I <b>donated the relief fund $50</b>.,134,130,,argstr,filler,dative,ditr,donate,np,trans,,,2,dative,dative,,,yes,-40,14,7,6,1
 227,"After I saw the disaster on TV,",I <b>donated $50 to them</b>.,I <b>donated them $50</b>.,135,131,,argstr,filler,dative,ditr,donate,pron,trans,,,3,dative,dative,,,yes,-40,12,5,4,1
