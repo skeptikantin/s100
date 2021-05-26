@@ -293,7 +293,11 @@ newTrial("debrief",
         .css("font-family", "Verdana")
         .print()
     ,
-
+    newText("<p>Note: though rare, sending results may take up to 30 seconds<br/>(we have included this in our study time estimates).</p>")
+        .css("font-size", "1em")
+        .css("font-family", "Verdana")
+        .print()
+    ,
     newButton("send", "Send results & proceed to verification link")
         .size(300)
         .center()
